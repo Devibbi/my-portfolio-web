@@ -1,4 +1,4 @@
-function show_block(block_name){
+function show_block(item, block_name){
 
     // clear all classes from block2
     var block_2 = document.getElementsByClassName('block2');
@@ -18,5 +18,7 @@ function show_block(block_name){
     
     // show only selected block
     document.getElementById(block_name).classList.add('show');
+    document.querySelector('.active').classList.remove('active');
+    item.classList.add('active');
     
 }
