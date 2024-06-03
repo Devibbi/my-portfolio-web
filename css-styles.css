@@ -9,6 +9,7 @@
 body {
     font-size: 18px;
     background: white;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* making background*/
@@ -98,6 +99,7 @@ li a:hover:not(.active) {
 
 .enter {
     text-align: center;
+    color: black;
 
 }
 
@@ -114,7 +116,7 @@ li a:hover:not(.active) {
 .block1 a {
     text-decoration: none;
     padding: 10px;
-    px;
+
 }
 
 .bordar {
@@ -135,16 +137,6 @@ li a:hover:not(.active) {
 
 }
 
-.border-line-h:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, .7) 0, rgba(255, 255, 255, 0) 70%);
-    background: radial-gradient(ellipse at left, rgba(197, 202, 213, .7) 0, rgba(255, 255, 255, 0) 70%)
-}
 
 .bordar1 p {
     width: 30%;
@@ -164,9 +156,122 @@ li a:hover:not(.active) {
     flex: 1;
 }
 
-.left{
-    float:left;
+.left {
+    float: left;
 }
-.right{
-    float:right;
+
+.right {
+    float: right;
+}
+
+.color-1 {
+    color: black;
+}
+
+.color-2 {
+    color: #006769;
+}
+
+.color-3 {
+    color: #40A578;
+}
+
+.color-4 {
+    color: #9DDE8B;
+}
+
+.color-5 {
+
+    color: #E6FF94;
+}
+
+.color-6 {
+    color: white;
+}
+
+.bordbox {
+    border: 1px #006769;
+    background-color: #006769;
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+}
+
+.bottomtext {
+    text-align: bottom;
+}
+
+.margint26 {
+    margin-top: 26px;
+}
+
+.margint10 {
+    margin-top: 10px;
+}
+
+.margint5 {
+    margin-top: 5px;
+}
+
+.margint-40 {
+    margin-top: -40px;
+}
+
+
+.vert-line {
+    border-right: 1px solid black;
+
+
+}
+
+div .color-1:hover {
+    color: #40A578;
+}
+
+.ftsize1 {
+    font-size: 30px;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.padding-30 {
+    padding: 30px;
+
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    left: -100px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        left: -120px;
+        position: absolute;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+        position: absolute;
+    }
+}
+
+.show {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }

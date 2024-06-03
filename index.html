@@ -6,6 +6,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css-styles.css">
+    <script type="text/javascript" src="script.js"></script>
 
 </head>
 
@@ -13,47 +14,177 @@
 
     <div class="background gradient">
         <div class="enter">
-            <ul>
-                <li><a class="active" href="#home">Home<i class="fa-solid fa-house-chimney"></i></a></li>
-                <li><a href="#news">About<i class="fa-solid fa-address-card"></i></a></li>
-                <li><a href="#contact">Blog <i class="fa-solid fa-blog"></i></a></li>
-                <li><a href="#about">Contact<i class="fa-solid fa-address-book"></i></a></li>
+            <ul id="menu">
+                <li><a onclick="show_block('home')" class="active" href="#home">Home<br><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a onclick="show_block('education')" href="#news">Education<i class="fa-solid fa-school"></i></a></li>
+                <li><a onclick="show_block('blog')" href="#contact">Blog <br><i class="fa-solid fa-blog"></i></a></li>
+                <li><a onclick="show_block('contact')" href="#about">Contact<br><i class="fa-solid fa-address-book"></i></a></li>
             </ul>
         </div>
-        <div class="block1 ">
+        <div class="block1  ">
             <img src="ibbi1.png" alt="ibbi">
             <h2 class="enter colr">M. Ibraheem Zaffar</h2>
             <h3 class="enter"> Front End Engineer</h3>
             <div class="enter">
-                <a href="#" class="fa-brands fa-facebook"></a>
-                <a href="#" class="fa-brands fa-twitter"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
-                <a href="#" class="fa-brands fa-github"></a>
+                <a href="#" class="fa-brands fa-facebook color-1"></a>
+                <a href="#" class="fa-brands fa-twitter color-1"></a>
+                <a href="#" class="fa-brands fa-instagram color-1"></a>
+                <a href="#" class="fa-brands fa-github color-1"></a>
             </div>
             <div id="cv-enter">
-                <a class="bordar" href="#">Download CV</a>
-                <a class="bordar" href="#">Contact Me</a>
+                <a class="bordar color-1" href="#">Download CV</a>
+                <a class="bordar color-1" href="#">Contact Me</a>
             </div>
         </div>
-        <div class="block2">
+
+
+        <!--- home block -- start -->
+        <div id="home" class="block2 scroll">
             <div class="block2b">
-                <div class="block-about padding-20 border-line-h flex-1">
-                    <h3>About me</h3>
+                <div class="block-about padding-20 flex-1 vert-line">
+
+                    <h2> <span class="color-2">About</span> me</h2>
+                    <hr>
                     <p>I am Programmer who has multi talents. I can do anything
                         from developing a web page to making a fully functional software.
                         My main work is front end engineering
                     </p>
+
                 </div>
-                <div class="block-services padding-20 border-line-h flex-1">
+
+                <div class="padding-20 flex-1 margint26">
                     <div>
-                        <span class="left">hello</span>
-                        <span class="right">heelo</span>
+                        <span class="left bordbox   ">Age...</span>
+                        <span class="right margint10">23</span>
                     </div>
-                    
-                </div>        
+                    <br><br>
+                    <hr>
+                    <div>
+                        <span class="left bordbox ">Residence...</span>
+                        <span class="right margint10 ">Pakistan</span>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <div>
+                        <span class="left bordbox ">Freelance...</span>
+                        <span class="right margint5">Available</span>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <div>
+                        <span class="left bordbox ">Address...</span>
+                        <span class="right margint5">Rawalpindi, Pakistan</span>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="padding-20 margint-40">
+                <h2><span class="color-2">My</span> Services</h2>
+                <hr>
+            </div>
+            <div class="block2b enter">
+                <div class="padding-20 flex-1 vert-line">
+                    <div>
+                        <i class="fa-solid fa-code ftsize1 color-2"></i>
+                        <h3>Web Development</h3>
+                        <p>We offer comprehensive web development services that are tailored to meet the unique needs of
+                            your business. We focus on creating a user-friendly experience for your visitors, ensuring
+                            that your website is easy to navigate and optimized for conversions.</p>
+                    </div>
+                </div>
+                <div class="padding-20  flex-1">
+                    <div><i class="fa-solid fa-pen-nib ftsize1 color-2"></i><br>
+                        <h3>Web Designing</h3>
+                        <p>Web designing is the process of planning, conceptualizing, and implementing the plan for
+                            designing a website in a way that is functional and offers a good user experience. User
+                            experience is central to the web designing process.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--- education block -- start -->
+        <div id="education" class="block2 scroll">
+            <div class="padding-20 margint-40">
+                <h2><span class="color-2">My</span> Education</h2>
+                <hr>
+            </div>
+            <div class="block2b enter">
+                <div class="padding-20 flex-1 vert-line">
+                    <div>
+                        <i class="fa-solid fa-code ftsize1 color-2"></i>
+                        <h3>Web Development</h3>
+                        <p>We offer comprehensive web development services that are tailored to meet the unique needs of
+                            your business. We focus on creating a user-friendly experience for your visitors, ensuring
+                            that your website is easy to navigate and optimized for conversions.</p>
+                    </div>
+                </div>
+                <div class="padding-20  flex-1">
+                    <div><i class="fa-solid fa-pen-nib ftsize1 color-2"></i><br>
+                        <h3>Web Designing</h3>
+                        <p>Web designing is the process of planning, conceptualizing, and implementing the plan for
+                            designing a website in a way that is functional and offers a good user experience. User
+                            experience is central to the web designing process.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+
+        <!--- blog block -- start -->
+        <div id="blog" class="block2 scroll">
+            <div class="padding-20 margint-40">
+                <h2><span class="color-2">My</span> Blog</h2>
+                <hr>
+            </div>
+            <div class="block2b enter">
+                <div class="padding-20 flex-1 vert-line">
+                    <div>
+                        <i class="fa-solid fa-code ftsize1 color-2"></i>
+                        <h3>Web Development</h3>
+                        <p>We offer comprehensive web development services that are tailored to meet the unique needs of
+                            your business. We focus on creating a user-friendly experience for your visitors, ensuring
+                            that your website is easy to navigate and optimized for conversions.</p>
+                    </div>
+                </div>
+                <div class="padding-20  flex-1">
+                    <div><i class="fa-solid fa-pen-nib ftsize1 color-2"></i><br>
+                        <h3>Web Designing</h3>
+                        <p>Web designing is the process of planning, conceptualizing, and implementing the plan for
+                            designing a website in a way that is functional and offers a good user experience. User
+                            experience is central to the web designing process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--- contact block -- start -->
+         <div id="contact" class="block2 scroll">
+            <div class="padding-20 margint-40">
+                <h2><span class="color-2">Contact</span> me</h2>
+                <hr>
+            </div>
+            <div class="block2b enter">
+                <div class="padding-20 flex-1 vert-line">
+                    <div>
+                        <i class="fa-solid fa-code ftsize1 color-2"></i>
+                        <h3>Web Development</h3>
+                        <p>We offer comprehensive web development services that are tailored to meet the unique needs of
+                            your business. We focus on creating a user-friendly experience for your visitors, ensuring
+                            that your website is easy to navigate and optimized for conversions.</p>
+                    </div>
+                </div>
+                <div class="padding-20  flex-1">
+                    <div><i class="fa-solid fa-pen-nib ftsize1 color-2"></i><br>
+                        <h3>Web Designing</h3>
+                        <p>Web designing is the process of planning, conceptualizing, and implementing the plan for
+                            designing a website in a way that is functional and offers a good user experience. User
+                            experience is central to the web designing process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
