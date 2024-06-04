@@ -362,3 +362,15 @@ input[type=text], select {
     border-radius:4px;
     cursor:pointer;
   }
+
+  .flex-1 ul {
+    list-style-type: none;
+  }
+
+  .left1{
+    text-align: left;
+  }
+.txt-dec{
+    text-decoration: none;
+    color:#006769;
+}
